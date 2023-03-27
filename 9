@@ -1,0 +1,24 @@
+for(int q=1;q<=n-1;q++)
+    {
+        for(int k=1;k<=n-1;k++)
+            {
+                for(int i=1;i<=n-k;i++)
+                {
+                    if(a[k][k]<a[k+1][k+1])
+                        {
+                        for(int j=1;j<=n;j++)
+                        {
+                            p=a[k][j];
+                            a[k][j]=a[k+1][j];
+                            a[k+1][j]=p;
+                        }
+                        for(int l=1;l<=n;l++)
+                        {bp=b[k];
+                        b[k]=b[k+1];
+                        b[k+1]=bp;}
+                    }
+                }
+            }
+        }
+        
+        
